@@ -7619,6 +7619,288 @@ a.anchor-link {
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=822a7367-cac1-497f-a3ab-2c1d13401c01">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1>Завдання на самостійне опрацювання </h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=429f4ced-9e63-4d8d-8840-7b07d0db4d18">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>1. Реалізувати процедуру обчислення факторіалу за допомогою цикла for. Оцінити асимптотичну складність алгоритму.</strong></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fac439a4-b7be-43ae-8778-693fdad0f007">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Обчислення факторіалу числа n за допомогою циклу for."""</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="c1"># Приклад використання</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Факторіал числа </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> дорівнює </span><span class="si">{</span><span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Факторіал числа 5 дорівнює 120
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>Цикл for ітерує від 2 до 𝑛, тобто виконується 𝑛−1 разів.
+На кожній ітерації виконується одна операція множення.
+Кількість операцій — O(n), тобто лінійна складність.
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6000c2be-45bf-40d8-9a55-083776a2f08b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>2.Оцінити асимптотичну складність рекурсивного алгоритму обчислення факторіалу.</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a69d8489-907d-4dca-83d2-5203fae1de04">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="%D0%90%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D0%B9-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7">Асимптотичний аналіз<a class="anchor-link" href="#%D0%90%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D0%B9-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7">¶</a></h2><p>Щоб оцінити асимптотичну складність цього алгоритму, подивимось, скільки викликів функції відбувається для кожного значення ( n ).</p>
+<h3 id="1.-%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%B5-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">1. <strong>Рекурсивне рівняння</strong><a class="anchor-link" href="#1.-%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%B5-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">¶</a></h3><ul>
+<li>Для обчислення <code>factorial(n)</code>, ми викликаємо <code>factorial(n-1)</code>, <code>factorial(n-2)</code>, і так далі до <code>factorial(1)</code>.</li>
+<li>Отже, кількість викликів для обчислення ( factorial(n) ) дорівнює ( n ).</li>
+<li>Рекурсивне рівняння має вигляд:
+[
+$T(n) = T(n-1) + O(1)$
+]
+де ( O(1) ) — це одна операція множення (
+$ n \cdot factorial(n-1) $).</li>
+</ul>
+<h3 id="2.-%D0%A0%D0%BE%D0%B7%D0%B2'%D1%8F%D0%B7%D0%BE%D0%BA-%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">2. <strong>Розв'язок рекурсивного рівняння</strong><a class="anchor-link" href="#2.-%D0%A0%D0%BE%D0%B7%D0%B2'%D1%8F%D0%B7%D0%BE%D0%BA-%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">¶</a></h3><ul>
+<li>Якщо розкрити рівняння, отримаємо:
+[
+$T(n) = T(n-1) + O(1)$
+]
+[</li>
+</ul>
+<p>$ T(n-1) = T(n-2) + O(1)$
+  ]
+  [
+  $T(n-2) = T(n-3) + O(1)$
+  ]
+  Продовжуючи цей процес, отримаємо:
+  [
+  $T(n) = O(1) + O(1) + \cdots + O(1) \quad (n \text{ разів})$
+  ]
+  Всього ( n ) викликів, кожен із яких вимагає константний час ( O(1) ).</p>
+<h3 id="3.-%D0%9E%D1%86%D1%96%D0%BD%D0%BA%D0%B0-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%96">3. <strong>Оцінка складності</strong><a class="anchor-link" href="#3.-%D0%9E%D1%86%D1%96%D0%BD%D0%BA%D0%B0-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%96">¶</a></h3><ul>
+<li>Кількість викликів — ( n ), і кожен із них займає ( O(1) ) часу.</li>
+<li>Отже, повна часова складність:
+[
+T(n) = O(n)
+]</li>
+</ul>
+<h2 id="%D0%92%D0%B8%D1%81%D0%BD%D0%BE%D0%B2%D0%BE%D0%BA"><strong>Висновок</strong><a class="anchor-link" href="#%D0%92%D0%B8%D1%81%D0%BD%D0%BE%D0%B2%D0%BE%D0%BA">¶</a></h2><ul>
+<li><strong>Асимптотична складність</strong> рекурсивного алгоритму обчислення факторіалу дорівнює:
+[
+O(n)
+]</li>
+<li>Складність ідентична до алгоритму з циклом <code>for</code>.</li>
+<li>Недоліком рекурсивного підходу є те, що для великих значень ( n ) можлива <strong>переповнена стекова пам'ять</strong>, оскільки кожен рекурсивний виклик зберігається у стеку викликів. Для великих значень ( n ) краще використовувати ітеративний підхід.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=02efb109-691e-4556-b92b-d1fa5ece89e1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>3. Оцінити асимптотичну складність рекурсивного алгоритму обчислення n-го числа Фібоначчі.</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cc868c7e-c53b-4b76-9bab-7ff985c1e29b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%B8%D0%B9-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC-%D0%B4%D0%BB%D1%8F-%D0%BE%D0%B1%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-(-n-)-%D0%B3%D0%BE-%D1%87%D0%B8%D1%81%D0%BB%D0%B0-%D0%A4%D1%96%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D1%96">Рекурсивний алгоритм для обчислення ( n )-го числа Фібоначчі<a class="anchor-link" href="#%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%B8%D0%B9-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC-%D0%B4%D0%BB%D1%8F-%D0%BE%D0%B1%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-(-n-)-%D0%B3%D0%BE-%D1%87%D0%B8%D1%81%D0%BB%D0%B0-%D0%A4%D1%96%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D1%96">¶</a></h1><h2 id="%D0%90%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D0%B9-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7">Асимптотичний аналіз<a class="anchor-link" href="#%D0%90%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D0%B9-%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7">¶</a></h2><p>Щоб оцінити асимптотичну складність цього алгоритму, розглянемо кількість викликів функції для кожного значення ( n ).</p>
+<h3 id="1.-%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%B5-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">1. <strong>Рекурсивне рівняння</strong><a class="anchor-link" href="#1.-%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%B5-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">¶</a></h3><ul>
+<li>Щоб обчислити <code>fibonacci(n)</code>, ми викликаємо <code>fibonacci(n-1)</code> та <code>fibonacci(n-2)</code>.</li>
+<li>Отже, рекурсивне рівняння для часу виконання ( T(n) ) має вигляд:
+[
+$T(n) = T(n-1) + T(n-2) + O(1)$
+]
+де ( O(1) ) — це одна операція додавання результатів двох рекурсивних викликів.</li>
+</ul>
+<h3 id="2.-%D0%A0%D0%BE%D0%B7%D0%B2'%D1%8F%D0%B7%D0%BE%D0%BA-%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">2. <strong>Розв'язок рекурсивного рівняння</strong><a class="anchor-link" href="#2.-%D0%A0%D0%BE%D0%B7%D0%B2'%D1%8F%D0%B7%D0%BE%D0%BA-%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">¶</a></h3><ul>
+<li>Кількість викликів функції зростає за законом, подібним до ряду Фібоначчі.</li>
+<li>Число рекурсивних викликів експоненційно зростає із збільшенням ( n ).</li>
+<li>Зрозуміти це можна, намалювавши дерево викликів для <code>fibonacci(5)</code>:<pre><code>           fibonacci(5)
+          /           \
+    fibonacci(4)      fibonacci(3)
+    /       \         /         \
+fibonacci(3) fibonacci(2) fibonacci(2) fibonacci(1)
+/     \
+</code></pre>
+</li>
+</ul>
+<p>fibonacci(2) fibonacci(1)</p>
+<pre><code>
+- Глибина дерева дорівнює \( n \), і на кожному рівні кількість викликів приблизно подвоюється.
+- У результаті загальна кількість вузлів у дереві є подібною до **бінарного дерева**, висота якого дорівнює \( n \).
+
+
+### 3. **Оцінка складності**
+- Кількість вузлів у бінарному дереві зі зростаючою глибиною \( n \) зростає за законом **експоненційної прогресії**.
+- Число вузлів можна оцінити як:
+\[
+ $ T(n) \approx 2^n$
+\]
+- Таким чином, часова складність для рекурсивного алгоритму обчислення числа Фібоначчі є:
+\[
+ $ T(n) = O(2^n)$
+\]
+
+
+##  **Висновок**
+- **Асимптотична складність** рекурсивного алгоритму для обчислення \( n \)-го числа Фібоначчі дорівнює:
+\[
+O(2^n)
+\]
+- Це **експоненційна складність**, яка зростає дуже швидко зі збільшенням \( n \).
+- Через велику кількість рекурсивних викликів для великих \( n \) алгоритм стає неефективним.
+- **Оптимізований підхід** — використання **мемоізації** або **динамічного програмування**, що дозволяє зменшити складність до \( O(n) \).
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9de05395-c189-4446-82ad-f68795bb627e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>4. Оцінити асимптотичну складність алгоритму сортування злиттям, використовуючи основну теорему рекурсії.</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=86213ae3-e3f0-4f09-83fa-213ea4469094">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="%D0%9E%D1%86%D1%96%D0%BD%D0%BA%D0%B0-%D0%B0%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%97-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%96-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83-%D1%81%D0%BE%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%B7%D0%BB%D0%B8%D1%82%D1%82%D1%8F%D0%BC">Оцінка асимптотичної складності алгоритму сортування злиттям<a class="anchor-link" href="#%D0%9E%D1%86%D1%96%D0%BD%D0%BA%D0%B0-%D0%B0%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%97-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%96-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83-%D1%81%D0%BE%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%B7%D0%BB%D0%B8%D1%82%D1%82%D1%8F%D0%BC">¶</a></h1><h2 id="%D0%9E%D0%BF%D0%B8%D1%81-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83">Опис алгоритму<a class="anchor-link" href="#%D0%9E%D0%BF%D0%B8%D1%81-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83">¶</a></h2><p>Алгоритм сортування злиттям (Merge Sort) працює за принципом <strong>розділяй і володарюй</strong>:</p>
+<ol>
+<li>Рекурсивно розділяє масив на дві рівні частини.</li>
+<li>Сортує кожну частину окремо.</li>
+<li>Зливає дві відсортовані частини в один відсортований масив.</li>
+</ol>
+<hr/>
+<h2 id="%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%B5-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">Рекурсивне рівняння<a class="anchor-link" href="#%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%B5-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F">¶</a></h2><p>Для оцінки асимптотичної складності використаємо <strong>основну теорему рекурсії</strong>.</p>
+<ol>
+<li><strong>Рекурсивний поділ</strong>: кожного разу масив розбивається на 2 підмасиви.</li>
+<li><strong>Злиття</strong>: об'єднання двох відсортованих частин в один відсортований масив за час ( O(n) ), де ( n ) — довжина масиву.</li>
+</ol>
+<p>Рекурсивне рівняння для часу роботи ( T(n) ) виглядає так:
+[
+$T(n) = 2 \cdot T\left(\frac{n}{2}\right) + O(n)$
+]
+де:</p>
+<ul>
+<li>$( T\left(\frac{n}{2}\right))$ — час сортування кожної з двох половин масиву.</li>
+<li>( O(n) ) — час на злиття двох відсортованих підмасивів.</li>
+</ul>
+<hr/>
+<h2 id="%D0%A0%D0%BE%D0%B7%D0%B2'%D1%8F%D0%B7%D0%BE%D0%BA-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F-(%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0-%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D1%96%D1%97)">Розв'язок рівняння (основна теорема рекурсії)<a class="anchor-link" href="#%D0%A0%D0%BE%D0%B7%D0%B2'%D1%8F%D0%B7%D0%BE%D0%BA-%D1%80%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D0%BD%D1%8F-(%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0-%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D1%80%D0%B5%D0%BA%D1%83%D1%80%D1%81%D1%96%D1%97)">¶</a></h2><p>Використаємо метод розгортання рівняння.</p>
+<ol>
+<li><strong>Розгортання першого рівня</strong>:
+[</li>
+</ol>
+<p>$ T(n) = 2 \cdot T\left(\frac{n}{2}\right) + O(n)$
+   ]</p>
+<ol start="2">
+<li><p><strong>Розгортання другого рівня</strong>:
+[
+$T\left(\frac{n}{2}\right) = 2 \cdot T\left(\frac{n}{4}\right) + O\left(\frac{n}{2}\right)$
+]
+Підставимо у рівняння для ( T(n) ):
+[
+$T(n) = 2 \left( 2 \cdot T\left(\frac{n}{4}\right) + O\left(\frac{n}{2}\right) \right) + O(n)$
+]
+[
+$T(n) = 4 \cdot T\left(\frac{n}{4}\right) + O(n) + O(n)$
+]
+[
+$T(n) = 4 \cdot T\left(\frac{n}{4}\right) + 2 \cdot O(n)$
+]</p>
+</li>
+<li><p><strong>Загальна структура</strong>:
+На ( k )-му рівні рекурсії розмір масиву зменшується до ($ \frac{n}{2^k}$ ), а кількість підзадач зростає до ($ 2^k $). 
+Час на кожному рівні об'єднання підмасивів дорівнює ( O(n) ), і кількість рівнів ($ \log_2(n)$ ).</p>
+</li>
+<li><p><strong>Оцінка загального часу</strong>:
+[</p>
+</li>
+</ol>
+<p>$ T(n) = O(n) + O(n) + O(n) + \cdots + O(n) \quad (\log_2(n) \text{ разів})$
+   ]
+   Сума часу на кожному рівні дорівнює ( O(n) ), а оскільки кількість рівнів дорівнює ( $\log_2(n) $), то повна часова складність:
+   [
+ $  T(n) = O(n \log n)$
+   ]</p>
+<hr/>
+<h2 id="%D0%92%D0%B8%D1%81%D0%BD%D0%BE%D0%B2%D0%BE%D0%BA"><strong>Висновок</strong><a class="anchor-link" href="#%D0%92%D0%B8%D1%81%D0%BD%D0%BE%D0%B2%D0%BE%D0%BA">¶</a></h2><ul>
+<li><strong>Асимптотична складність</strong> алгоритму сортування злиттям дорівнює:
+[
+$O(n \log n)$
+]</li>
+<li>Основна теорема рекурсії дозволяє визначити, що кількість рівнів рекурсії дорівнює ( $\log_2(n) $), а кожний рівень потребує часу ( O(n) ) на злиття масивів.</li>
+<li>Алгоритм ефективніший, ніж сортування вставкою чи бульбашкове сортування (( $O(n^2) $)).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </main>
 </body>
 </html>
